@@ -1,4 +1,4 @@
-import { colors } '~/styles/theme'
+import styled, { css } from 'styled-components'; 
 
 type Props = {
     color?: 'blue' | 'red'
@@ -25,6 +25,3 @@ const Button = styled.button<Props>`
   }}
 `
 
-const RedButton = styled(Button)`
-    background-color: ${colors.primary};
-`

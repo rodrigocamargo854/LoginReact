@@ -13,7 +13,7 @@ const App = () => {
     <div className="App">
       <div className="login">
         <div className="container">
-          {mode === 'login' ? <Login /> : <Register />}
+          {mode === 'login' ? <Register /> : <Login />}
         </div>
         <Aside mode={mode} onClick={toggleState} />
       </div>

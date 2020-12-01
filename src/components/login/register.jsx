@@ -1,40 +1,35 @@
 import React from "react";
 import loginImg from "../../login.svg";
+import { BasedContainer, Content, Footer, Form, FormGroup, Header, Image } from "../ComponentesEstilizados/ComponentsStyled";
 
-export class Register extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
+export const Register = () => {
     return (
-      <div className="base-container">
-        <div className="header">Register</div>
-        <div className="content">
-          <div className="image">
+      <BasedContainer>
+        <Header>Register</Header>
+        <Content>
+          <Image>
             <img src={loginImg} />
-          </div>
-          <div className="form">
-            <div className="form-group">
+          </Image>
+          <Form>
+            <FormGroup>
               <label htmlFor="username">Username</label>
               <input type="text" name="username" placeholder="username" />
-            </div>
-            <div className="form-group">
+            </FormGroup>
+            <FormGroup>
               <label htmlFor="email">Email</label>
               <input type="text" name="email" placeholder="email" />
-            </div>
-            <div className="form-group">
+            </FormGroup>
+            <FormGroup>
               <label htmlFor="password">Password</label>
               <input type="text" name="password" placeholder="password" />
-            </div>
-          </div>
-        </div>
-        <div className="footer">
+            </FormGroup>
+          </Form>
+        </Content>
+        <Footer>
           <button type="button" className="btn">
             Register
           </button>
-        </div>
-      </div>
+        </Footer>
+      </BasedContainer>
     );
   }
-}
